@@ -1,18 +1,38 @@
 .wrapper {
   overflow: hidden;
   max-width: 1236px;
-  margin-left: auto;
   margin-right: auto;
-  padding-left: 18px;
+  margin-left: auto;
   padding-right: 18px;
+  padding-left: 18px;
 
   &--medium {
     max-width: 976px;
   }
 
-  .wrapper {
-    padding-left: 0;
+  &--no-padding-until-medium {
     padding-right: 0;
+    padding-left: 0;
+
+    @mixin atMedium {
+      padding-right: 18px;
+      padding-left: 18px;
+    }
+  }
+
+  &--no-padding-until-large {
+    padding-right: 0;
+    padding-left: 0;
+
+    @mixin atLarge {
+      padding-right: 18px;
+      padding-left: 18px;
+    }
+  }
+
+  .wrapper {
+    padding-right: 0;
+    padding-left: 0;
   }
 
   &--b-margin {
