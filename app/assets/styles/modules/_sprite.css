@@ -6,8 +6,8 @@ Instead edit gulp/templates/sprite */
   }
 
   .icon--clear-view-escapes {
-    height: 142.4px;
-    width: 59.53px;
+    height: 59.53px;
+    width: 142.4px;
     background-position: 0 0;
   }
 
@@ -30,7 +30,7 @@ Instead edit gulp/templates/sprite */
   }
 
   .icon--globe {
-    height: 66px;
+    height: 64px;
     width: 64px;
     background-position: 27.586206896551722% 99.56481481481481%;
   }

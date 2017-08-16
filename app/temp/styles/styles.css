@@ -504,11 +504,19 @@ a {
 .large-hero__text-content {
     position: absolute;
     top: 50%;
+    padding-top: 88px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     left: 0;
     width: 100%;
     text-align: center;
+  }
+
+@media (min-width: 800px) {
+
+.large-hero__text-content {
+      padding-top: 60px
+  }
   }
 
 .large-hero__title {
@@ -999,8 +1007,8 @@ Instead edit gulp/templates/sprite */
   }
 
 .icon--clear-view-escapes {
-    height: 142.4px;
-    width: 59.53px;
+    height: 59.53px;
+    width: 142.4px;
     background-position: 0 0;
   }
 
@@ -1023,7 +1031,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .icon--globe {
-    height: 66px;
+    height: 64px;
     width: 64px;
     background-position: 27.586206896551722% 99.56481481481481%;
   }
@@ -1090,4 +1098,103 @@ Instead edit gulp/templates/sprite */
       margin-bottom: 0;
       margin-right: 1.4rem
   }
+  }
+
+.site-header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  padding: 10px 0;
+}
+
+@media (min-width: 800px) {
+
+.site-header {
+    background-color: rgba(47,85,114, 0.3)
+}
+  }
+
+.site-header__btn-container {
+    float: right;
+  }
+
+.site-header__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%) scale(0.8);
+            transform: translateX(-50%) scale(0.8);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+    padding: 25px 36px;
+    background-color: #2f5572;
+  }
+
+@media (min-width: 800px) {
+
+.site-header__logo {
+      left: auto;
+      -webkit-transform: translateX(0);
+              transform: translateX(0)
+  }
+  }
+
+.site-header__logo-graphic {
+    text-indent: -9999px;
+  }
+
+.site-header__menu-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: #FFF;
+  }
+
+@media (min-width: 800px) {
+
+.site-header__menu-icon {
+      display: none
+  }
+  }
+
+.site-header__menu-content {
+    display: none;
+  }
+
+@media (min-width: 800px) {
+
+.site-header__menu-content {
+      display: block
+  }
+  }
+
+.primary-nav--pull-right {
+    float: right;
+  }
+
+.primary-nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+.primary-nav ul::after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+
+.primary-nav li {
+    list-style: none;
+    float: left;
+    padding-right: 20px;
+  }
+
+.primary-nav a {
+    display: block;
+    padding: 12px 0;
+    color: #FFF;
+    font-weight: 300;
+    text-decoration: none;
   }
